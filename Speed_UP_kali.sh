@@ -1,6 +1,6 @@
 #Bismillahir Rahmanir Rahim
 #Author : Grim Firefly
-#Autho Profile : https://github.com/grim-firefly
+#Author Profile : https://github.com/grim-firefly
 
 #!/bin/bash
 
