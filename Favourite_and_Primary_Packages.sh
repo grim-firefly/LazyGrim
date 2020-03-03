@@ -32,10 +32,6 @@ function speedupkali() {
     $spgi -y apt-transport-https
 }
 
-function upgrading_kali(){
-    e
-}
-
 echo -e "*****$scl Scripted By $dbg $ecl*****"
 echo -e "$scl speeding up kali $ecl"
 speedupkali
