@@ -19,7 +19,7 @@ si="Successfully Installed "
 function speedupkali() {
     echo -e "$scl (: Changing Sources :) $ecl"
     local s_file="/etc/apt/sources.list"
-    if [ -f s_file ]; then
+    if [ -f $s_file ]; then
         echo "deb https://http.kali.org/kali kali-rolling main non-free contrib" >$s_file
         echo "# deb-src https//http.kali.org/kali kali-rolling main non-free contrib" >>$s_file
     else
