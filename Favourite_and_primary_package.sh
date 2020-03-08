@@ -37,6 +37,14 @@ function browser_ins() {
     else
         echo -e "$scl Sorry :(  Please, fix it menually :) $ecl"
     fi
+    #installing xdm
+    wget -O xdm.tar.xz https://sourceforge.net/projects/xdman/files/xdm-2018-x64.tar.xz
+    tar -xvf xdm.tar.xz
+    sudo ./install.sh
+    rm xdm.tar.xz
+    rm install.sh
+    rm readme.txt
+
 }
 #for installing ide for programming
 function ide_editor() {
