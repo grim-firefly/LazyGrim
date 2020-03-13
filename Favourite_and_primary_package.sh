@@ -65,6 +65,18 @@ function media_player() {
     sed -i 's/geteuid/getppid/g' /usr/bin/vlc
 
 }
+#some folder and file creation
+function directory_needed_by_me() {
+    mkdir Hacking Programming Software Torrent Website
+    cd Programming
+    mkdir Atcoder C C++ CodeForces Practice GIT HackerEarth HackerRank Java LightOJ python shellScript UVA Vjudge
+    touch input.txt output.txt
+    cd GIT
+    git clone https://github.com/grim-firefly/LazyGrim.git
+    git clone https://github.com/grim-firefly/G-BigInt.git
+    git clone https://github.com/grim-firefly/C-CPP-Project.git
+
+}
 echo -e "*****$scl Scripted By $dbg $ecl*****"
 echo -e "$scl $ins primary package $ecl"
 primary_package
@@ -78,5 +90,8 @@ echo -e "$scl codeblocks and vscode $si $ecl"
 echo -e "$scl $ins media player vlc and rhythmbox $ecl"
 media_player
 echo -e "$scl $si rhythmbox and vlc $ecl"
+echo -e "$scl Creating Directory :) $ecl"
+directory_needed_by_me
+echo -e "$scl done creating Directory and files :) $ecl"
 echo -e "$scl $ty $ecl"
 echo -e "$scl -$dbg $ecl"
