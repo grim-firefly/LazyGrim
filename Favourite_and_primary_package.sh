@@ -38,7 +38,7 @@ function browser_ins() {
         echo -e "$scl Sorry :(  Please, fix it menually :) $ecl"
     fi
     #installing xdm
-    wget -O xdm.tar.xz https://sourceforge.net/projects/xdman/files/xdm-2018-x64.tar.xz
+    wget -O xdm.tar.xz https://github.com/subhra74/xdm/releases/download/7.2.10/xdm-setup-7.2.10.tar.xz
     tar -xvf xdm.tar.xz
     sudo ./install.sh
     rm xdm.tar.xz
