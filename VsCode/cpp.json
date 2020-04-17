@@ -1,80 +1,151 @@
 {
-    "Basic Structure": {
-        "prefix": "basic",
-        "description": "Basic Structure of C++ Code by Grim",
-        "body": [
-            "//Code Start",
-            "#include <bits/stdc++.h> \nusing namespace std;",
-            "\n//constant",
-            "#define PI acos(-1.0)",
-            "\n//typedef",
-            "typedef long long ll;",
-            "typedef unsigned long long ull;",
-            "typedef long double ld;",
-            "typedef unsigned un;",
-            "typedef pair<int, int> pii;",
-            "typedef pair<ll, ll> pll;",
-            "typedef vector<int> vi;",
-            "typedef vector<ll> vll;",
-            "typedef vector<string> vs;",
-            "typedef vector<pii> vii;",
-            "typedef map<int, int> mii;",
-            "typedef map<char, char> mcc;",
-            "typedef map<char, int> mci;",
-            "typedef map<string, int> msi;",
-            "typedef map<ll, ll> mll;",
-            "\n//defined for loop\n",
-            "",
-            "// defined for taking input",
-            "#define gl(x) getline(cin, x)",
-            "#define sf scanf",
-            "#define sfi(x) sf(\"%d\", &x)",
-            "#define sfc(x) sf(\"%c\", &x)",
-            "#define sfl(x) sf(\"%lld\", &x)",
-            "#define sflu(x) sf(\"%llu\", &x)",
-            "#define sfii(x, y) sf(\"%d %d\", &x, &y)",
-            "#define sfll(x, y) sf(\"%lld %lld\", &x, &y)",
-            "#define sfiii(x, y, z) sf(\"%d %d %d\", &x, &y, &z)",
-            "#define sflll(x, y, z) sf(\"%lld %lld %lld\", &x, &y, &z)",
-            "",
-            "//defined for printing",
-            "#define pf printf",
-            "#define pfn pf(\"\\n\")",
-            "#define pfcas pf(\"Case %d: \", cas)",
-            "#define pfyes pf(\"YES\")",
-            "#define pfno pf(\"NO\")",
-            "#define pfi(x) pf(\"%d\", x)",
-            "#define pfl(x) pf(\"%lld\", x)",
-            "\n//Defined for loop",
-            "//increament",
-            "#define loopi(i, j, k) for (int i = j; i < k; i++)",
-            "#define loopl(i, j, k) for (ll i = j; i < k; i++)",
-            "#define loopc(i, j, k) for (char i = j; i < k; i++)",
-            "#define looplu(i, j, k) for (ull i = j; i < k; i++)",
-            "//decreament",
-            "#define loopri(i, j, k) for (int i = j; i > k; i--)",
-            "#define looprl(i, j, k) for (ll i = j; i > k; i--)",
-            "#define looprlu(i, j, k) for (ull i = j; i > k; i--)",
-            "#define looprc(i, j, k) for (char i = j; i > k; i--)",
-            "#define wa(t) while (t--)",
-            "",
-            "//testcases",
-            "#define testc(t) for (char cas = 1; cas <= t; cas++)",
-            "#define testi(t) for (int cas = 1; cas <= t; cas++)",
-            "#define testl(t) for (ll cas = 1; cas <= t; cas++)",
-            "",
-            "//some cmd",
-            "#define pb push_back",
-            "#define ppb pop_back",
-            "#define mp make_pair",
-            "",
-            "//Main Function Start",
-            "",
-            "int main()",
-            "{",
-            "\t$0",
-            "    return 0;",
-            "}"
-        ]
-    }
+	
+	"basic type def": {
+		"prefix": "basic",
+		"body": [
+			"",
+			"//Code Start",
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"",
+			"//constant",
+			"#define PI acos(-1.0)",
+			"",
+			"//typedef",
+			"typedef long long ll;",
+			"typedef unsigned long long ull;",
+			"typedef long double ld;",
+			"typedef unsigned un;",
+			"typedef pair<int, int> pii;",
+			"typedef pair<ll, ll> pll;",
+			"typedef vector<int> vi;",
+			"typedef vector<ll> vll;",
+			"typedef vector<string> vs;",
+			"typedef vector<pii> vii;",
+			"typedef map<int, int> mii;",
+			"typedef map<char, char> mcc;",
+			"typedef map<char, int> mci;",
+			"typedef map<string, int> msi;",
+			"typedef map<ll, ll> mll;",
+			"typedef set<int> seti;",
+			"typedef set<ll> setl;",
+			"typedef queue<int> qui;",
+			"typedef deque<int> dqui;",
+			"",
+			"//main function start",
+			"",
+			"int main()",
+			"{",
+			"\t$0",
+			"\treturn 0;",
+			"}"
+		],
+		"description": "basic type def"
+	},
+	"printf for all": {
+		"prefix": "pf",
+		"body": "printf(\"$1\"$2);\n$0",
+		"description": "printing anything using C mehod :)"
+	},
+	"printing newline": {
+		"prefix": "pfn",
+		"body": "printf(\"\\n\");\n$0",
+		"description": "printing new line"
+	},
+	"printing case": {
+		"prefix": "pfcas",
+		"body": "printf(\"Case %d: \", cas);\n$0",
+		"description": "printing Case number"
+	},
+	"printing YES": {
+		"prefix": "yes",
+		"body": "printf(\"YES\\n\");\n$0",
+		"description": "printing yes"
+	},
+	"printing NO": {
+		"prefix": "no",
+		"body": "printf(\"NO\\n\");\n$0",
+		"description": "printing NO"
+	},
+	"take input": {
+		"prefix": "sf",
+		"body": [
+			"scanf(\"${1:%d}\",${2:&x});",
+			"$0"
+		],
+		"description": "take input"
+	},
+	"getline": {
+		"prefix": "gl",
+		"body": [
+			"getline(cin,${1:str});"
+		],
+		"description": "getline"
+	},
+	"test case start": {
+		"prefix": "test",
+		"body": [
+			"for (${1:int} cas = 1; cas <= ${2:count}; cas++)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "test case start"
+	},
+	"while decrementing": {
+		"prefix": "wa",
+		"body": [
+			"while(${1:t}--)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "while decrementing"
+	},
+	"for loop for stl": {
+		"prefix": "fstl",
+		"body": [
+			"for(auto ${1:i}=${2:vec}.begin();${1:i}!=${2:vec}.end();${1:i}++)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "for loop for stl"
+	},
+	"for reverse loop for stl": {
+		"prefix": "fstlr",
+		"body": [
+			"for(auto ${1:i}=${2:vec}.end()-1;${1:i}!=${2:vec}.begin()-1;${1:i}--)",
+			"{",
+			"}"
+		],
+		"description": "for reverse loop for stl"
+	},
+	"void function": {
+		"prefix": "vfun",
+		"body": [
+			"void ${1:function_name}(${2:perimeter})",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "void function"
+	},
+	"type function": {
+		"prefix": "tfun",
+		"body": [
+			"${1:int} ${2:function_name}(${3:perimeter})",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "type function"
+	},
+	"return": {
+		"prefix": "rt",
+		"body": [
+			"return ${1:0};",
+		],
+		"description": "return"
+	}
 }
