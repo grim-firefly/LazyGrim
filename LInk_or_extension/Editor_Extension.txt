@@ -1,0 +1,26 @@
+/*
+ * ----------------------------------------------------------------------------
+ (: Bismillahir Rahmanir Rahim :) 
+ * File: /root/Programming/GIT/LazyGrim/LInk_or_extension/Editor Extension
+ * Project: /root/Programming/GIT/LazyGrim/LInk_or_extension
+ * Created Date: Sunday, April 19th 2020, 2:19:13 pm
+ * Author: Grim Firefly :)
+ * Author Mail : GrimFirefly1@gmail.com
+ * -----
+ * Last Modified: Sun Apr 19 2020
+ * Modified By: Grim Firefly :)
+ * -----
+ * ----------------------------------------------------------------------------
+ *//root/Downloads/[TorrentBD]JSA Joint Security Area 2000 KOREAN 1080p BluRay H264 AAC-VXT.torrent
+
+
+
+
+1. Bracket Pair Colorizer
+2. C/c++
+3. Code Runner
+4. Competitive Programming Helper
+5. Dark+ Material
+6. psioniq File Header
+7. Shell-Format
+8. VsCode-Icons

@@ -1,0 +1,27 @@
+/*
+ * ----------------------------------------------------------------------------
+ (: Bismillahir Rahmanir Rahim :) 
+ * File: /root/Programming/GIT/LazyGrim/LInk_or_extension/browser_extension.txt
+ * Project: /root/Programming/GIT/LazyGrim/LInk_or_extension
+ * Created Date: Sunday, April 19th 2020, 1:24:42 pm
+ * Author: Grim Firefly :)
+ * Author Mail : GrimFirefly1@gmail.com
+ * -----
+ * Last Modified: Sun Apr 19 2020
+ * Modified By: Grim Firefly :)
+ * -----
+ * ----------------------------------------------------------------------------
+ */
+
+
+
+
+
+
+1 . Competitive Companion  https://addons.mozilla.org/en-US/firefox/addon/competitive-companion/
+2.  adblock Plus           https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/
+3. gnome shell Intigration https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/
+4. tempermonkey(scirpt)    https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/
+5. CF Fast Submit(script)  https://github.com/LumaKernel/cf-fast-submit
+                           https://greasyfork.org/en/scripts/371117-cf-fast-submit
+6. xdm from local                          
