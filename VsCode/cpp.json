@@ -158,7 +158,8 @@
 	"getline": {
 		"prefix": "gl",
 		"body": [
-			"getline(cin,${1:str});"
+			"getline(cin,${1:str});",
+			"$0"
 		],
 		"description": "getline"
 	},
@@ -205,8 +206,9 @@
 	"for reverse loop for stl": {
 		"prefix": "fstlr",
 		"body": [
-			"for(auto ${1:i}=${2:vec}.end()-1;${1:i}!=${2:vec}.begin()-1;${1:i}--)",
+			"for(auto ${1:i}=${2:vec}.rbegin()-1;${1:i}!=${2:vec}.rend()-1;${1:i}++)",
 			"{",
+			"\t$0",
 			"}"
 		],
 		"description": "for reverse loop for stl"

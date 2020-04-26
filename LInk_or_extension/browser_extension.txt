@@ -7,7 +7,7 @@
  * Author: Grim Firefly :)
  * Author Mail : GrimFirefly1@gmail.com
  * -----
- * Last Modified: Sun Apr 19 2020
+ * Last Modified: Sun Apr 26 2020
  * Modified By: Grim Firefly :)
  * -----
  * ----------------------------------------------------------------------------
@@ -19,9 +19,11 @@
 
 
 1 . Competitive Companion  https://addons.mozilla.org/en-US/firefox/addon/competitive-companion/
+                            port : 27121
 2.  adblock Plus           https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/
 3. gnome shell Intigration https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/
 4. tempermonkey(scirpt)    https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/
 5. CF Fast Submit(script)  https://github.com/LumaKernel/cf-fast-submit
                            https://greasyfork.org/en/scripts/371117-cf-fast-submit
 6. xdm from local                          
+7.CF-Predictor(Rating)     https://greasyfork.org/en/scripts/38050-cf-predictor
