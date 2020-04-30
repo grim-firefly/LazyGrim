@@ -28,21 +28,6 @@
 			"typedef unsigned long long ull;",
 			"typedef long double ld;",
 			"typedef unsigned un;",
-			"typedef pair<int, int> pii;",
-			"typedef pair<ll, ll> pll;",
-			"typedef vector<int> vi;",
-			"typedef vector<ll> vll;",
-			"typedef vector<string> vs;",
-			"typedef vector<pii> vii;",
-			"typedef map<int, int> mii;",
-			"typedef map<char, char> mcc;",
-			"typedef map<char, int> mci;",
-			"typedef map<string, int> msi;",
-			"typedef map<ll, ll> mll;",
-			"typedef set<int> seti;",
-			"typedef set<ll> setl;",
-			"typedef queue<int> qui;",
-			"typedef deque<int> dqui;",
 			"",
 			"//Debug Setting up",
 			"#define watch(x) cout<< (#x)<<\" is \"<<x<<endl",
@@ -56,11 +41,8 @@
 			"",
 			"int main()",
 			"{",
-			"\tios_base::sync_with_stdio(0);",
-			"\tcin.tie(0);",
 			"",
 			"\t$0",
-			"",
 			"\treturn 0;",
 			"}"
 		],
@@ -82,12 +64,24 @@
 		"description": "printing Case number"
 	},
 	"printing YES": {
-		"prefix": "yes",
+		"prefix": "YES",
 		"body": "printf(\"YES\\n\");\n$0",
-		"description": "printing yes"
+		"description": "printing YES"
+	},
+	"printing Yes": {
+		"prefix": "Yes",
+		"body": [
+			"printf(\"Yes\\n\");"
+		],
+		"description": "printing Yes"
+	},
+	"printing No": {
+		"prefix": "No",
+		"body": "printf(\"No\\n\");\n$0",
+		"description": "printing No"
 	},
 	"printing NO": {
-		"prefix": "no",
+		"prefix": "NO",
 		"body": "printf(\"NO\\n\");\n$0",
 		"description": "printing NO"
 	},
@@ -99,6 +93,22 @@
 		],
 		"description": "output 1 intiger"
 	},
+	"output 1 Long intiger": {
+		"prefix": "pfl",
+		"body": [
+			"printf(\"%lld\\n\",${1:x});",
+			"$0"
+		],
+		"description": "output 1 Long intiger"
+	},
+	"output 1 unsigned long intiger": {
+		"prefix": "pflu",
+		"body": [
+			"printf(\"%llu\\n\",${1:x});",
+			"$0"
+		],
+		"description": "output 1 unsigned Long intiger"
+	},
 	"output 2 intiger": {
 		"prefix": "pfii",
 		"body": [
@@ -107,6 +117,22 @@
 		],
 		"description": "output 2 intiger"
 	},
+	"output 2 Long intiger": {
+		"prefix": "pfll",
+		"body": [
+			"printf(\"%lld %lld\\n\",${1:x},${2:y});",
+			"$0"
+		],
+		"description": "output 2 Long intiger"
+	},
+	"output 2 unsigned Long intiger": {
+		"prefix": "pfllu",
+		"body": [
+			"printf(\"%llu %llu\\n\",${1:x},${2:y});",
+			"$0"
+		],
+		"description": "output 2 unsigned Long intiger"
+	},
 	"output 3 intiger": {
 		"prefix": "pfiii",
 		"body": [
@@ -114,6 +140,22 @@
 			"$0"
 		],
 		"description": "output 3 intiger"
+	},
+	"output 3 Long intiger": {
+		"prefix": "pflll",
+		"body": [
+			"printf(\"%lld %lld %lld\\n\",${1:x},${2:y},${3:z});",
+			"$0"
+		],
+		"description": "output 3 Long intiger"
+	},
+	"output 3 unsigned Long intiger": {
+		"prefix": "pflllu",
+		"body": [
+			"printf(\"%llu %llu %llu\\n\",${1:x},${2:y},${3:z});",
+			"$0"
+		],
+		"description": "output 3 unsigned long intiger"
 	},
 	"take input": {
 		"prefix": "sf",
@@ -131,6 +173,22 @@
 		],
 		"description": "take input 1 intiger"
 	},
+	"take input 1 Long intiger": {
+		"prefix": "sfl",
+		"body": [
+			"scanf(\"%lld\",&${1:x});",
+			"$0"
+		],
+		"description": "take input 1 Long intiger"
+	},
+	"take input 1 unsigned Long intiger": {
+		"prefix": "sflu",
+		"body": [
+			"scanf(\"%llu\",&${1:x});",
+			"$0"
+		],
+		"description": "take input 1 Long intiger"
+	},
 	"take input 2 intiger": {
 		"prefix": "sfii",
 		"body": [
@@ -138,6 +196,22 @@
 			"$0"
 		],
 		"description": "take input 2 intiger"
+	},
+	"take input 2 Long intiger": {
+		"prefix": "sfll",
+		"body": [
+			"scanf(\"%lld %lld\",&${1:x},&${2:y});",
+			"$0"
+		],
+		"description": "take input 2 Long intiger"
+	},
+	"take input 2 unsigned Long intiger": {
+		"prefix": "sfllu",
+		"body": [
+			"scanf(\"%llu %llu\",&${1:x},&${2:y});",
+			"$0"
+		],
+		"description": "take input 2 unsigned Long intiger"
 	},
 	"take input 3 intiger": {
 		"prefix": "sfiii",
@@ -147,6 +221,22 @@
 		],
 		"description": "take input 3 intiger"
 	},
+	"take input 3 Long intiger": {
+		"prefix": "sflll",
+		"body": [
+			"scanf(\"%lld %lld %lld\",&${1:x},&${2:y},&${3:z});",
+			"$0"
+		],
+		"description": "take input 3 Long intiger"
+	},
+	"take input 3 unsigned Long intiger": {
+		"prefix": "sflllu",
+		"body": [
+			"scanf(\"%llu %llu %llu\",&${1:x},&${2:y},&${3:z});",
+			"$0"
+		],
+		"description": "take input 3 Long intiger"
+	},
 	"take input 4 intiger": {
 		"prefix": "sfiv",
 		"body": [
@@ -154,6 +244,22 @@
 			"$0"
 		],
 		"description": "take input 4 intiger"
+	},
+	"take input 4 Long intiger": {
+		"prefix": "sflv",
+		"body": [
+			"scanf(\"%lld %lld %lld %lld\",&${1:x},&${2:y},&${3:z},&${4:w});",
+			"$0"
+		],
+		"description": "take input 4 Long intiger"
+	},
+	"take input 4 unsigned Long intiger": {
+		"prefix": "sflvu",
+		"body": [
+			"scanf(\"%llu %llu %llu %llu\",&${1:x},&${2:y},&${3:z},&${4:w});",
+			"$0"
+		],
+		"description": "take input 4 Long intiger"
 	},
 	"getline": {
 		"prefix": "gl",
@@ -163,19 +269,37 @@
 		],
 		"description": "getline"
 	},
-	"test case start": {
+	"get char string": {
+		"prefix": "gs",
+		"body": [
+			"cin.getline(${1:str},${2:size});\n$0"
+		],
+		"description": "get char string"
+	},
+	"get char": {
+		"prefix": "gc",
+		"body": [
+			"getchar();\n$0"
+		],
+		"description": "get char"
+	},
+	"test cases for intiger": {
 		"prefix": "test",
 		"body": [
-			"for (${1:int} cas = 1; cas <= ${2:count}; cas++)",
+			"int Test_Limit;",
+			"scanf(\"%d\", &Test_Limit);",
+			"for (int cas = 1; cas <= Test_Limit; cas++)",
 			"{",
 			"\t$0",
 			"}"
 		],
-		"description": "test case start"
+		"description": "test cases for intiger"
 	},
 	"while decrementing": {
 		"prefix": "wa",
 		"body": [
+			"int ${1:t};",
+			"scanf(\"%d\",&${1:t});",
 			"while(${1:t}--)",
 			"{",
 			"\t$0",
