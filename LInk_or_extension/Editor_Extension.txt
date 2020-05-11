@@ -24,3 +24,14 @@
 6. psioniq File Header
 7. Shell-Format
 8. VsCode-Icons
+9. vim
+
+
+keyboard_shortcut_change :
+file->preference->Keyboard Shortcut
+1. Move Line
+	search :  Move Line
+	set up= alt+k , set down= alt+j
+2. Focus terminal 
+	search : workbench.action.terminal.focus
+	set = ctrl+i
