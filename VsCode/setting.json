@@ -125,7 +125,8 @@
         {
             "language": "*",
             "template": [
-                "----------------------------------------------------------------------------\n (: Bismillahir Rahmanir Rahim :) ",
+                "----------------------------------------------------------------------------",
+                " (: Bismillahir Rahmanir Rahim :) ",
                 "File: <<filepath>>",
                 "Project: <<projectpath>>",
                 "Created Date: <<filecreated('dddd, MMMM Do YYYY, h:mm:ss a')>>",
