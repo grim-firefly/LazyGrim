@@ -27,3 +27,5 @@
                            https://greasyfork.org/en/scripts/371117-cf-fast-submit
 6. xdm from local                          
 7.CF-Predictor(Rating)     https://greasyfork.org/en/scripts/38050-cf-predictor
+8.CF problem Navigator     https://greasyfork.org/en/scripts/383360-atcoder-problem-navigator
+
