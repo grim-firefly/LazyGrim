@@ -1,13 +1,12 @@
 {
     "C_Cpp.updateChannel": "Insiders",
     "code-runner.runInTerminal": true,
-    "workbench.colorTheme": "Dark+ Material",
     "code-runner.saveAllFilesBeforeRun": true,
     "code-runner.executorMap": {
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -std=c++17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
         "python": "python3 ",
@@ -49,7 +48,6 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "files.autoSave": "afterDelay",
-    "workbench.iconTheme": "vscode-icons",
     "competitive-programming-helper.firstTime": false,
     "psi-header.config": {
         "forceToTop": true,
@@ -211,7 +209,6 @@
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-        
             "before": [
                 "m",
                 "a"
@@ -224,5 +221,7 @@
             ]
         }
     ],
-    "vim.useSystemClipboard": true
+    "vim.useSystemClipboard": true,
+    "editor.lineNumbers": "relative",
+    "workbench.colorTheme": "Dark C++ Theme"
 }
