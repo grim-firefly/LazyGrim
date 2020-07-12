@@ -1,17 +1,4 @@
 {
-	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-	// same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
 	"basic structure": {
 		"prefix": "basic",
 		"body": [
@@ -23,21 +10,23 @@
 			"//constant",
 			"#define PI acos(-1.0)",
 			"#define SZ 10000",
-			"",
+			"#define mod 1000000007",
 			"//typedef",
 			"typedef long long ll;",
 			"typedef unsigned long long ull;",
 			"typedef long double ld;",
+			"typedef double db;",
 			"typedef unsigned un;",
 			"typedef pair<int, int> pii;",
 			"typedef vector<int> vi;",
 			"",
 			"//Debug Setting up",
 			"#define watch(x) cout << (#x) << \"=\" << x << endl",
-			"#define watch2(x, y) cout << (#x) << \"=\" << x << \" and \" << (#y) << \"=\" << y << endl;",
-			"#define watchara(wow)  \\",
-			"    for (auto x : wow) \\",
-			"    cout << x << \" \"",
+			"#define watch2(x, y) cout << (#x) << \"=\" << x << \" & \" << (#y) << \"=\" << y << endl;",
+			"#define watchara(wow)  for (auto x : wow){cout << x << \" \";}cout<<\"\\n\"",
+			"",
+			"//defining fast_io",
+			"#define fast_io ios_base::sync_with_stdio(false); cin.tie(NULL);cout.tie(NULL)",
 			"",
 			"//defining something",
 			"#define F first",
@@ -46,275 +35,19 @@
 			"//Main Function Start From Here",
 			"void solve()",
 			"{",
-			"${0}",
+			"    ${0}",
 			"}",
 			"",
 			"int main()",
 			"{",
+			"    fast_io;    ",
+			"    ",
 			"    solve();",
+			"",
 			"    return 0;",
 			"}"
 		],
 		"description": "basic structure"
-	},
-	"printf for all": {
-		"prefix": "pf",
-		"body": "printf(\"$1\"$2);\n$0",
-		"description": "printing anything using C mehod :)"
-	},
-	"printing newline": {
-		"prefix": "pfn",
-		"body": "printf(\"\\n\");\n$0",
-		"description": "printing new line"
-	},
-	"printing case": {
-		"prefix": "pfcas",
-		"body": "printf(\"Case %d: \", cas);\n$0",
-		"description": "printing Case number"
-	},
-	"printing YES": {
-		"prefix": "YES",
-		"body": "printf(\"YES\\n\");\n$0",
-		"description": "printing YES"
-	},
-	"printing Yes": {
-		"prefix": "Yes",
-		"body": [
-			"printf(\"Yes\\n\");"
-		],
-		"description": "printing Yes"
-	},
-	"printing No": {
-		"prefix": "No",
-		"body": "printf(\"No\\n\");\n$0",
-		"description": "printing No"
-	},
-	"printing NO": {
-		"prefix": "NO",
-		"body": "printf(\"NO\\n\");\n$0",
-		"description": "printing NO"
-	},
-	"output 1 intiger": {
-		"prefix": "pfi",
-		"body": [
-			"printf(\"%d\\n\",${1:x});",
-			"$0"
-		],
-		"description": "output 1 intiger"
-	},
-	"output 1 Long intiger": {
-		"prefix": "pfl",
-		"body": [
-			"printf(\"%lld\\n\",${1:x});",
-			"$0"
-		],
-		"description": "output 1 Long intiger"
-	},
-	"output 1 unsigned long intiger": {
-		"prefix": "pflu",
-		"body": [
-			"printf(\"%llu\\n\",${1:x});",
-			"$0"
-		],
-		"description": "output 1 unsigned Long intiger"
-	},
-	"output 2 intiger": {
-		"prefix": "pfii",
-		"body": [
-			"printf(\"%d %d\\n\",${1:x},${2:y});",
-			"$0"
-		],
-		"description": "output 2 intiger"
-	},
-	"output 2 Long intiger": {
-		"prefix": "pfll",
-		"body": [
-			"printf(\"%lld %lld\\n\",${1:x},${2:y});",
-			"$0"
-		],
-		"description": "output 2 Long intiger"
-	},
-	"output 2 unsigned Long intiger": {
-		"prefix": "pfllu",
-		"body": [
-			"printf(\"%llu %llu\\n\",${1:x},${2:y});",
-			"$0"
-		],
-		"description": "output 2 unsigned Long intiger"
-	},
-	"output 3 intiger": {
-		"prefix": "pfiii",
-		"body": [
-			"printf(\"%d %d %d\\n\",${1:x},${2:y},${3:z});",
-			"$0"
-		],
-		"description": "output 3 intiger"
-	},
-	"output 3 Long intiger": {
-		"prefix": "pflll",
-		"body": [
-			"printf(\"%lld %lld %lld\\n\",${1:x},${2:y},${3:z});",
-			"$0"
-		],
-		"description": "output 3 Long intiger"
-	},
-	"output 3 unsigned Long intiger": {
-		"prefix": "pflllu",
-		"body": [
-			"printf(\"%llu %llu %llu\\n\",${1:x},${2:y},${3:z});",
-			"$0"
-		],
-		"description": "output 3 unsigned long intiger"
-	},
-	"take input": {
-		"prefix": "sf",
-		"body": [
-			"scanf(\"${1:%d}\",${2:&x});",
-			"$0"
-		],
-		"description": "take input"
-	},
-	"take input 1 intiger": {
-		"prefix": "sfi",
-		"body": [
-			"scanf(\"%d\",&${1:x});",
-			"$0"
-		],
-		"description": "take input 1 intiger"
-	},
-	"take input 1 Long intiger": {
-		"prefix": "sfl",
-		"body": [
-			"scanf(\"%lld\",&${1:x});",
-			"$0"
-		],
-		"description": "take input 1 Long intiger"
-	},
-	"take input 1 unsigned Long intiger": {
-		"prefix": "sflu",
-		"body": [
-			"scanf(\"%llu\",&${1:x});",
-			"$0"
-		],
-		"description": "take input 1 Long intiger"
-	},
-	"take input 2 intiger": {
-		"prefix": "sfii",
-		"body": [
-			"scanf(\"%d %d\",&${1:x},&${2:y});",
-			"$0"
-		],
-		"description": "take input 2 intiger"
-	},
-	"take input 2 Long intiger": {
-		"prefix": "sfll",
-		"body": [
-			"scanf(\"%lld %lld\",&${1:x},&${2:y});",
-			"$0"
-		],
-		"description": "take input 2 Long intiger"
-	},
-	"take input 2 unsigned Long intiger": {
-		"prefix": "sfllu",
-		"body": [
-			"scanf(\"%llu %llu\",&${1:x},&${2:y});",
-			"$0"
-		],
-		"description": "take input 2 unsigned Long intiger"
-	},
-	"take input 3 intiger": {
-		"prefix": "sfiii",
-		"body": [
-			"scanf(\"%d %d %d\",&${1:x},&${2:y},&${3:z});",
-			"$0"
-		],
-		"description": "take input 3 intiger"
-	},
-	"take input 3 Long intiger": {
-		"prefix": "sflll",
-		"body": [
-			"scanf(\"%lld %lld %lld\",&${1:x},&${2:y},&${3:z});",
-			"$0"
-		],
-		"description": "take input 3 Long intiger"
-	},
-	"take input 3 unsigned Long intiger": {
-		"prefix": "sflllu",
-		"body": [
-			"scanf(\"%llu %llu %llu\",&${1:x},&${2:y},&${3:z});",
-			"$0"
-		],
-		"description": "take input 3 Long intiger"
-	},
-	"take input 4 intiger": {
-		"prefix": "sfiv",
-		"body": [
-			"scanf(\"%d %d %d %d\",&${1:x},&${2:y},&${3:z},&${4:w});",
-			"$0"
-		],
-		"description": "take input 4 intiger"
-	},
-	"take input 4 Long intiger": {
-		"prefix": "sflv",
-		"body": [
-			"scanf(\"%lld %lld %lld %lld\",&${1:x},&${2:y},&${3:z},&${4:w});",
-			"$0"
-		],
-		"description": "take input 4 Long intiger"
-	},
-	"take input 4 unsigned Long intiger": {
-		"prefix": "sflvu",
-		"body": [
-			"scanf(\"%llu %llu %llu %llu\",&${1:x},&${2:y},&${3:z},&${4:w});",
-			"$0"
-		],
-		"description": "take input 4 Long intiger"
-	},
-	"getline": {
-		"prefix": "gl",
-		"body": [
-			"getline(cin,${1:str});",
-			"$0"
-		],
-		"description": "getline"
-	},
-	"get char string": {
-		"prefix": "gs",
-		"body": [
-			"cin.getline(${1:str},${2:size});\n$0"
-		],
-		"description": "get char string"
-	},
-	"get char": {
-		"prefix": "gc",
-		"body": [
-			"getchar();\n$0"
-		],
-		"description": "get char"
-	},
-	"test cases for intiger": {
-		"prefix": "test",
-		"body": [
-			"int Test_Limit;",
-			"scanf(\"%d\", &Test_Limit);",
-			"for (int cas = 1; cas <= Test_Limit; cas++)",
-			"{",
-			"\t$0",
-			"}"
-		],
-		"description": "test cases for intiger"
-	},
-	"while decrementing": {
-		"prefix": "wa",
-		"body": [
-			"int ${1:t};",
-			"scanf(\"%d\",&${1:t});",
-			"while(${1:t}--)",
-			"{",
-			"\t$0",
-			"}"
-		],
-		"description": "while decrementing"
 	},
 	"for loop for stl": {
 		"prefix": "fstl",
@@ -372,5 +105,165 @@
 			"return $0",
 		],
 		"description": "return"
+	},
+	//printing start here
+	"new line": {
+		"prefix": "cnl",
+		"body": [
+			"cout<<\"\\n\";",
+			"$0"
+		],
+		"description": "new line"
+	},
+	"printing case": {
+		"prefix": "cas",
+		"body": [
+			"cout << \"Case \" << cas << \": \";",
+			"${0}"
+		],
+		"description": "printing case"
+	},
+	"printing YES": {
+		"prefix": "YES",
+		"body": [
+			"cout << \"YES\\n\";",
+			"${0}"
+		],
+		"description": "printing YES"
+	},
+	"printing Yes": {
+		"prefix": "Yes",
+		"body": [
+			"cout << \"Yes\\n\";",
+			"${0}"
+		],
+		"description": "printing Yes"
+	},
+	"printing NO": {
+		"prefix": "NO",
+		"body": [
+			"cout << \"NO\\n\";",
+			"${0}"
+		],
+		"description": "printing NO"
+	},
+	"printing No": {
+		"prefix": "No",
+		"body": [
+			"cout << \"No\\n\";",
+			"${0}"
+		],
+		"description": "printing No"
+	},
+	"printing 1 anything": {
+		"prefix": "o1",
+		"body": [
+			"cout << ${1:x}<<\"\\n\";",
+			"${0}"
+		],
+		"description": "printing 1 anything"
+	},
+	"output 2 anything": {
+		"prefix": "o2",
+		"body": [
+			"cout<<${1:x}<<\" \"<<${2:y}<<\"\\n\";",
+			"${0}"
+		],
+		"description": "output 2 anything"
+	},
+	"output 3 anything": {
+		"prefix": "o3",
+		"body": [
+			"cout<<${1:x}<<\" \"<<${2:y}<<\" \"<<${3:z}<<\"\\n\";",
+			"${0}"
+		],
+		"description": "output 3 anything"
+	},
+	"output 4 anything": {
+		"prefix": "o4",
+		"body": [
+			"cout<<${1:x}<<\" \"<<${2:y}<<\" \"<<${3:z}<<\" \"<<${4:a}<<\"\\n\";",
+			"${0}"
+		],
+		"description": "output 4 anything"
+	},
+	//intput
+	"taking 1 anything": {
+		"prefix": "i1",
+		"body": [
+			"cin>>${1:x};",
+			"${0}"
+		],
+		"description": "taking 1 anything"
+	},
+	"taking 2 anything": {
+		"prefix": "i2",
+		"body": [
+			"cin>>${1:x}>>${2:y};",
+			"${0}"
+		],
+		"description": "taking 2 anything"
+	},
+	"taking 3 anything": {
+		"prefix": "i3",
+		"body": [
+			"cin>>${1:x}>>${2:y}>>${3:z};",
+			"${0}"
+		],
+		"description": "taking 3 anything"
+	},
+	"taking 4 anything": {
+		"prefix": "i4",
+		"body": [
+			"cin>>${1:x}>>${2:y}>>${3:z}>>${4:a};",
+			"${0}"
+		],
+		"description": "taking 4 anything"
+	},
+	"getline": {
+		"prefix": "gl",
+		"body": [
+			"getline(cin,${1:str});",
+			"$0"
+		],
+		"description": "getline"
+	},
+	"get char string": {
+		"prefix": "gs",
+		"body": [
+			"cin.getline(${1:str},${2:size});\n$0"
+		],
+		"description": "get char string"
+	},
+	"get char": {
+		"prefix": "gc",
+		"body": [
+			"getchar();\n$0"
+		],
+		"description": "get char"
+	},
+	"test cases for intiger": {
+		"prefix": "test",
+		"body": [
+			"int Test_Limit;",
+			"cin>>Test_Limit;",
+			"for (int cas = 1; cas <= Test_Limit; cas++)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "test cases for intiger"
+	},
+	"while decrementing": {
+		"prefix": "wa",
+		"body": [
+			"int ${1:t};",
+			"cin>> ${1:t};",
+			"while(${1:t}--)",
+			"{",
+			"\t$0",
+			"}"
+		],
+		"description": "while decrementing"
 	}
 }
