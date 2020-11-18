@@ -20,40 +20,17 @@ function primary_package() {
     $spg update
     $spgi -y wget
     $spgi -y build-essential
-    $spgi -y fonts-beng
-    $spgi -y vim gdebi git gparted synaptic
-    $spgi -y alacarte
-    $spgi -y transmission-gtk
+    $spgi -y vim git gparted
+    $spgi -y alacarte plank gnome-tweak-tool
 }
 #browser like google chrome and firefox
 function browser_ins() {
-    #installing chrome
-    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    gdebi -y google-chrome-stable_current_amd64.deb
-    rm google-chrome-stable_current_amd64.deb
-    local pths_chrome="/opt/google/chrome/google-chrome"
-    if [ -e $pths_chrome ]; then
-        sed -i '$ s/$/ --no-sandbox/' $pths_chrome
-    else
-        echo -e "$scl Sorry :(  Please, fix it menually :) $ecl"
-    fi
-    #installing xdm
-    wget -O xdm.tar.xz https://github.com/subhra74/xdm/releases/download/7.2.10/xdm-setup-7.2.10.tar.xz
-    tar -xvf xdm.tar.xz
-    sudo ./install.sh
-    rm xdm.tar.xz
-    rm install.sh
-    rm readme.txt
-
+   
 }
 #for installing ide for programming
 function ide_editor() {
     #install codeblocks
-    $spgi -y codeblocks
-    #install vscode
-    wget -O vscode.deb https://go.microsoft.com/fwlink/?LinkID=760868
-    gdebi -y vscode.deb
-    rm vscode.deb
+    $spgi -y codeblocks python3
 
 }
 #for installing media player
@@ -62,19 +39,17 @@ function media_player() {
     $spgi -y rhythmbox
     #vlc player
     $spgi -y vlc
-    sed -i 's/geteuid/getppid/g' /usr/bin/vlc
-
 }
 #some folder and file creation
 function directory_needed_by_me() {
-    mkdir Hacking Programming Software Torrent Website
+    mkdir Hacking Programming   GIT
     cd Programming
-    mkdir Atcoder C C++ CodeForces Practice GIT HackerEarth HackerRank Java LightOJ python shellScript UVA Vjudge
-    touch input.txt output.txt
-    cd GIT
-    git clone https://github.com/grim-firefly/LazyGrim.git
-    git clone https://github.com/grim-firefly/G-BigInt.git
-    git clone https://github.com/grim-firefly/C-CPP-Project.git
+    mkdir Atcoder  CodeForces   HackerRank  LightOJ   UVA Vjudge Others A2OJ Sheet
+    cd CodeForces
+    mkdir Today Virtual Upsolve Others
+    cd ../
+    cd Atcoder
+    mkdir Today Virtual Upsolve Others
 
 }
 echo -e "*****$scl Scripted By $dbg $ecl*****"

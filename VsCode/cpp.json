@@ -2,8 +2,8 @@
 	"basic structure": {
 		"prefix": "basic",
 		"body": [
+			"/*  (: Bismillahir Rahmanir Rahim :)  */",
 			"",
-			"//Code Start",
 			"#include <bits/stdc++.h>",
 			"using namespace std;",
 			"",
@@ -79,26 +79,6 @@
 		],
 		"description": "for reverse loop for stl"
 	},
-	"void function": {
-		"prefix": "vfun",
-		"body": [
-			"void ${1:function_name}(${2:perimeter})",
-			"{",
-			"\t$0",
-			"}"
-		],
-		"description": "void function"
-	},
-	"type function": {
-		"prefix": "tfun",
-		"body": [
-			"${1:int} ${2:function_name}(${3:perimeter})",
-			"{",
-			"\t$0",
-			"}"
-		],
-		"description": "type function"
-	},
 	"return": {
 		"prefix": "rt",
 		"body": [
@@ -108,7 +88,7 @@
 	},
 	//printing start here
 	"new line": {
-		"prefix": "cnl",
+		"prefix": "nl",
 		"body": [
 			"cout<<\"\\n\";",
 			"$0"
@@ -155,71 +135,6 @@
 		],
 		"description": "printing No"
 	},
-	"printing 1 anything": {
-		"prefix": "o1",
-		"body": [
-			"cout << ${1:x}<<\"\\n\";",
-			"${0}"
-		],
-		"description": "printing 1 anything"
-	},
-	"output 2 anything": {
-		"prefix": "o2",
-		"body": [
-			"cout<<${1:x}<<\" \"<<${2:y}<<\"\\n\";",
-			"${0}"
-		],
-		"description": "output 2 anything"
-	},
-	"output 3 anything": {
-		"prefix": "o3",
-		"body": [
-			"cout<<${1:x}<<\" \"<<${2:y}<<\" \"<<${3:z}<<\"\\n\";",
-			"${0}"
-		],
-		"description": "output 3 anything"
-	},
-	"output 4 anything": {
-		"prefix": "o4",
-		"body": [
-			"cout<<${1:x}<<\" \"<<${2:y}<<\" \"<<${3:z}<<\" \"<<${4:a}<<\"\\n\";",
-			"${0}"
-		],
-		"description": "output 4 anything"
-	},
-	//intput
-	"taking 1 anything": {
-		"prefix": "i1",
-		"body": [
-			"cin>>${1:x};",
-			"${0}"
-		],
-		"description": "taking 1 anything"
-	},
-	"taking 2 anything": {
-		"prefix": "i2",
-		"body": [
-			"cin>>${1:x}>>${2:y};",
-			"${0}"
-		],
-		"description": "taking 2 anything"
-	},
-	"taking 3 anything": {
-		"prefix": "i3",
-		"body": [
-			"cin>>${1:x}>>${2:y}>>${3:z};",
-			"${0}"
-		],
-		"description": "taking 3 anything"
-	},
-	"taking 4 anything": {
-		"prefix": "i4",
-		"body": [
-			"cin>>${1:x}>>${2:y}>>${3:z}>>${4:a};",
-			"${0}"
-		],
-		"description": "taking 4 anything"
-	},
 	"getline": {
 		"prefix": "gl",
 		"body": [
@@ -234,13 +149,6 @@
 			"cin.getline(${1:str},${2:size});\n$0"
 		],
 		"description": "get char string"
-	},
-	"get char": {
-		"prefix": "gc",
-		"body": [
-			"getchar();\n$0"
-		],
-		"description": "get char"
 	},
 	"test cases for intiger": {
 		"prefix": "test",
