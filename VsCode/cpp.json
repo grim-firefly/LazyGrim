@@ -3,7 +3,11 @@
 		"prefix": "basic",
 		"body": [
 			"/*  (: Bismillahir Rahmanir Rahim :)  */",
+			"/*",
 			"",
+			"   Motto - Try Hard To become   **Expert**  :)",
+			"",
+			"*/",
 			"#include <bits/stdc++.h>",
 			"using namespace std;",
 			"",
