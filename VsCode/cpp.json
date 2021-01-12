@@ -13,6 +13,7 @@
 			"",
 			"//constant",
 			"#define PI acos(-1.0)",
+			"#define endl '\\n'",
 			"#define SZ 10000",
 			"#define mod 1000000007",
 			"//typedef",
@@ -22,8 +23,6 @@
 			"typedef double db;",
 			"typedef unsigned un;",
 			"typedef pair<int, int> pii;",
-			"typedef vector<int> vi;",
-			"",
 			"//Debug Setting up",
 			"#define watch(x) cout << (#x) << \"=\" << x << endl",
 			"#define watch2(x, y) cout << (#x) << \"=\" << x << \" & \" << (#y) << \"=\" << y << endl;",
@@ -82,6 +81,15 @@
 			"}"
 		],
 		"description": "for reverse loop for stl"
+	},
+	"for loop from 1 to n": {
+		"prefix": "for1",
+		"body": [
+			"for(${1:int} ${2:i}=1;${2:i}<=${3:n};${2:i}++){",
+			"\t$0",
+			"}"
+		],
+		"description": "for loop from 1 to n"
 	},
 	"return": {
 		"prefix": "rt",
