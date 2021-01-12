@@ -35,6 +35,12 @@
 			"#define F first",
 			"#define S second",
 			"",
+			"// defining Graph direction",
+			"const int dx[] = {0, 0, 1, -1};",
+			"const int dy[] = {1, -1, 0, 0};",
+			"const int xx[] = {0, 0, 1, 1, 1, -1, -1, -1};",
+			"const int yy[] = {1, -1, 0, 1, -1, 0, 1, -1};",
+			"",
 			"//Main Function Start From Here",
 			"void solve()",
 			"{",
@@ -102,7 +108,7 @@
 	"new line": {
 		"prefix": "nl",
 		"body": [
-			"cout<<\"\\n\";",
+			"cout<<endl;",
 			"$0"
 		],
 		"description": "new line"
