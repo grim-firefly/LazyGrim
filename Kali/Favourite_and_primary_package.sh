@@ -68,7 +68,7 @@ download_and_customize(){
 	wget -O macos.tar.xz https://github.com/grim-firefly/LazyGrim/releases/download/Themes_1/themes.tar.xz
 	tar -xvf macos.tar.xz
 	mv whitesur_cursors lacapatina ~/.icons
-	mv whitesur_alt ~/.themes
+	mv whitesur_light ~/.themes
 	mv cataline_white ~/.local/share/plank/themes
 	cd ~
 	
