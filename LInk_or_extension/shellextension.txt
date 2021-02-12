@@ -1,0 +1,7 @@
+1. User Themes - https://extensions.gnome.org/extension/19/user-themes/
+2. Frippery Move Clock - https://extensions.gnome.org/extension/2/move-clock/
+3. Dynamic Panel Transparency - https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/
+4. Panel OSD - https://extensions.gnome.org/extension/708/panel-osd/
+5. Workspace indicator - https://extensions.gnome.org/extension/3952/workspace-indicator/
+6. Colored Appmenu Icon - https://extensions.gnome.org/extension/3712/color-app-menu-icon/
+7. Internet Speed Meter - https://extensions.gnome.org/extension/2980/internet-speed-meter/
